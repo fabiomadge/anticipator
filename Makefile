@@ -3,7 +3,7 @@ all: build
 build:
 	ghc --make -O src/Main -o anticipator
 	@echo 'Done!'
-	@echo 'Run: ./antcipator [<args>]'
+	@echo 'Run: ./anticipator [<args>]'
 
 help:
 	@echo "Usage: make <commands>\n"
