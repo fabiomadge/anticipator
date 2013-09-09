@@ -15,8 +15,10 @@ help:
 	@echo "	clean       Deletes the binarie and build files.\n"
 list:
 	@cd src; \
-	ls *.java
+	ls *.hs
 
 clean:
-	rm -f src/*.class
-	rm -f listTest.jar
+	rm -f src/*.hi
+	rm -f src/*.o
+	rm -f src/anticipator
+	rm -f anticipator

@@ -34,22 +34,6 @@ getFirstLine (x:xs)
 	| x == '\n' = []
 	| otherwise = x : (getFirstLine xs)
 
---readInputs :: IO ((String, String, String, String))
---readInputs = do	
---	let base = "../../anticipator-input/"
---	one <- readFile (base ++ "1")
---	let parsedOne = readIntensity one
---	two <- readFile (base ++ "2")
---	let parsedTwo = readIntensity two
---	three <- readFile (base ++ "3")
---	putStrLn (three)
---	let parsedThree = readIntensity three
---	four <- readFile (base ++ "4")
-
---	h1 <- openFile (base ++ "1") ReadMode
---	one <- hGetLine h1
---	hClose h
-
 readInput :: Int -> IO(String)
 readInput s = do
 	let base = "../../anticipator-input/"
